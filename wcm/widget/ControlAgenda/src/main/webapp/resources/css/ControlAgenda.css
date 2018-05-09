@@ -1,0 +1,11 @@
+/* Coloque aqui seu codigo CSS */
+.modal-body{
+	overflow-x: hidden !important;
+}
+i.icon {
+	vertical-align:top !important;
+}
+#fluig-data-table-input{
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}

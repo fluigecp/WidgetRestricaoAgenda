@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="http://ecp.fluigcloud.com.br/portal/resources/style-guide/css/fluig-style-guide.min.css" />
+    <link href="http://ecp.fluigcloud.com.br/portal/resources/style-guide/css/fluig-style-guide-filter.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://ecp.fluigcloud.com.br/portal/resources/style-guide/css/fluig-style-guide-ratingstars.min.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="appFluig.css" />
+    <script type="text/javascript" src="../vcXMLRPC.js"></script>
+    <script src="http://ecp.fluigcloud.com.br/portal/resources/js/jquery/jquery.js"></script>
+    <script src="http://ecp.fluigcloud.com.br/portal/resources/js/jquery/jquery-ui.min.js"></script>
+    <script src="http://ecp.fluigcloud.com.br/portal/resources/js/mustache/mustache-min.js"></script>
+    <script src="http://ecp.fluigcloud.com.br/portal/resources/style-guide/js/fluig-style-guide.min.js"></script>
+    <!-- CUSTOM -->
+    <script src="http://ecp.fluigcloud.com.br/portal/resources/style-guide/js/fluig-style-guide-filter.min.js"></script>
+    <script src="http://ecp.fluigcloud.com.br/portal/resources/style-guide/js/fluig-style-guide-ratingstars.min.js"></script>
+    <script type="text/javascript" src="jquery.mask.min.js"></script>
+</head>
+<body class="fluig-style-guide">
+    <div class="container-fluid" id="container">
+        <form name="createFormComponents" class="totvs-form grid vertical create-form-components ui-sortable" style="padding-right: 10px; padding-left: 10px;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src="http://ecp.fluigcloud.com.br/portal/resources/images/1/logo_image.png" alt="Logo" id="logo" style="max-height: 50px; max-width: 250px;" />
+                    <h1 class="title-form-application text-center">Agendamento de Restrições</h1>
+                    <legend></legend>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="colorAgenda">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Cor</label>
+                                        <input name="colorAgenda" id="colorAgenda" class="form-control" type="text" placeholder="" value="" data-size="big">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="descricao">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Descrição</label>
+                                        <input name="descricao" id="descricao" class="form-control" type="text" placeholder="" value="" data-size="big">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="arrayDates">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Array datas</label>
+                                        <input name="arrayDates" id="arrayDates" class="form-control" type="text" placeholder="" value="" data-size="big">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="tdClass">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Horários de restrição</label>
+                                        <input name="tdClass" id="tdClass" class="form-control" type="text" placeholder="" value="" data-size="big">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="matMedico">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Matrícula do profissional</label>
+                                        <input name="matMedico" id="matMedico" class="form-control" type="text" placeholder="" value="" data-size="big">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="bloqueioCancelado">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Bloqueio cancelado?</label>
+                                        <input name="bloqueioCancelado" id="bloqueioCancelado" class="form-control" type="text" placeholder="" value="" data-size="big">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="profissional">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Profissional</label>
+                                        <input name="profissional" id="profissional" class="form-control" type="text" placeholder="" value="" data-size="big">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="motivo">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Motivo do bloqueio</label>
+                                        <input name="motivo" id="motivo" class="form-control" type="text" placeholder="" value="" data-size="big">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="dataInicial">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Data Início</label>
+                                        <input name="dataInicial" id="dataInicial" class="form-control" type="text" placeholder="" value="" data-size="big">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="dataFinal">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Data Final</label>
+                                        <input name="dataFinal" id="dataFinal" class="form-control" type="text" placeholder="" value="" data-size="big">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="horaInicial">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Hora Início</label>
+                                        <input name="horaInicial" id="horaInicial" class="form-control" type="text" placeholder="" value="" data-size="big">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="horaFinal">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Hora Final</label>
+                                        <input name="horaFinal" id="horaFinal" class="form-control" type="text" placeholder="" value="" data-size="big">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-field" data-type="textbox" data-show-properties="" data-field-name="logAlteracao">
+                                <div class="form-input">
+                                    <div class="form-group">
+                                        <label>Log de Alteração</label>
+                                        <textarea name="logAlteracao" id="logAlteracao" class="form-control" rows="10" readonly></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<!--  -->

@@ -1,0 +1,68 @@
+<soapenv:Envelope 
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+	xmlns:ws="http://ws.dm.ecm.technology.totvs.com/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ws:updateCardData>
+			<companyId>?</companyId>
+			<username>?</username>
+			<password>?</password>
+			<cardId>?</cardId>
+			<cardData>
+				<!-- Zero or more repetitions: -->
+				<item>
+					<field>bloqueioCancelado</field>
+					<value name="bloqueioCancelado" />
+				</item>
+				<item>
+					<field>profissional</field>
+					<value name="profissional" />
+				</item>
+				<item>
+					<field>motivo</field>
+					<value name="motivo" />
+				</item>
+				<item>
+					<field>dataInicial</field>
+					<value name="dataInicial" />
+				</item>
+				<item>
+					<field>dataFinal</field>
+					<value name="dataFinal" />
+				</item>
+				<item>
+					<field>horaInicial</field>
+					<value name="horaInicial" />
+				</item>
+				<item>
+					<field>horaFinal</field>
+					<value name="horaFinal" />
+				</item>
+				<item>
+					<field>logAlteracao</field>
+					<value name="logAlteracao" />
+				</item>
+				<item>
+					<field>descricao</field>
+					<value name="descricao" />
+				</item>
+				<item>
+					<field>arrayDates</field>
+					<value name="arrayDates" />
+				</item>
+				<item>
+					<field>matMedico</field>
+					<value name="matMedico" />
+				</item>
+				<item>
+					<field>tdClass</field>
+					<value name="tdClass" />
+				</item>
+				<item>
+					<field>colorAgenda</field>
+					<value name="colorAgenda" />
+				</item>
+			</cardData>
+		</ws:updateCardData>
+	</soapenv:Body>
+</soapenv:Envelope>

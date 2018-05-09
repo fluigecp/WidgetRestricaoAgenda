@@ -1,0 +1,92 @@
+<soapenv:Envelope 
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+	xmlns:ws="http://ws.dm.ecm.technology.totvs.com/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ws:create>
+			<companyId>?</companyId>
+			<username>?</username>
+			<password>?</password>
+			<card>
+				<!-- Zero or more repetitions: -->
+				<item>
+					<cardData>
+						<field>bloqueioCancelado</field>
+						<value name="bloqueioCancelado" />
+					</cardData>
+					<cardData>
+						<field>profissional</field>
+						<value name="profissional" />
+					</cardData>
+					<cardData>
+						<field>motivo</field>
+						<value name="motivo" />
+					</cardData>
+					<cardData>
+						<field>dataInicial</field>
+						<value name="dataInicial" />
+					</cardData>
+					<cardData>
+						<field>dataFinal</field>
+						<value name="dataFinal" />
+					</cardData>
+					<cardData>
+						<field>horaInicial</field>
+						<value name="horaInicial" />
+					</cardData>
+					<cardData>
+						<field>horaFinal</field>
+						<value name="horaFinal" />
+					</cardData>
+					<cardData>
+						<field>logAlteracao</field>
+						<value name="logAlteracao" />
+					</cardData>
+					<cardData>
+						<field>descricao</field>
+						<value name="descricao" />
+					</cardData>
+					<cardData>
+						<field>arrayDates</field>
+						<value name="arrayDates" />
+					</cardData>
+					<cardData>
+						<field>matMedico</field>
+						<value name="matMedico" />
+					</cardData>
+					<cardData>
+						<field>tdClass</field>
+						<value name="tdClass" />
+					</cardData>
+					<cardData>
+						<field>colorAgenda</field>
+						<value name="colorAgenda" />
+					</cardData>
+					<parentDocumentId>?</parentDocumentId>
+				</item>
+			</card>
+			<docsecurity>
+				<!--Optional:-->
+				<attributionType>3</attributionType>
+				<!--Optional:-->
+				<attributionValue></attributionValue>
+				<companyId>1</companyId>
+				<documentId></documentId>
+				<!--Optional:-->
+				<downloadEnabled>?</downloadEnabled>
+				<!--Zero or more repetitions:-->
+				<foo>?</foo>
+				<!--Optional:-->
+				<permission>true</permission>
+				<!--Optional:-->
+				<securityLevel>3</securityLevel>
+				<!--Optional:-->
+				<securityVersion>true</securityVersion>
+				<sequence>?</sequence>
+				<!--Optional:-->
+				<showContent>true</showContent>
+				<version>1</version>
+			</docsecurity>
+		</ws:create>
+	</soapenv:Body>
+</soapenv:Envelope>
